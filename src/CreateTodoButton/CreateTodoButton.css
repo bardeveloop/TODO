@@ -1,0 +1,47 @@
+.CreateTodoButton {
+  background-color: transparent;
+  border: 4px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  right: 2px;
+  top: 5px;
+  display: block;
+
+  transform: rotate(0);
+  transition: .3s ease;
+}
+
+.CreateTodoButton:hover {
+  transform: rotate(224deg);
+}
+.CreateTodoButton--marc{
+  background: #72B6FF;
+  border: none;
+  height: 64px;
+  width: 64px;
+  right: 10px;
+  top: 160px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+.Disable-button{
+  display: none;
+}
+
+@media (min-width: 427px){
+  .CreateTodoButton{
+    top: 2px;
+    right: 5px;
+  }
+  .CreateTodoButton--marc{
+    top: 135px;
+    right: 20px;
+  }
+}

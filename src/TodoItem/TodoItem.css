@@ -1,0 +1,135 @@
+.TodoItem {
+  border: 4px solid black;
+  margin-top: 35px;
+  background: #fafafa;
+  display: table;
+  width: 98%;
+}
+
+.TodoItem-p {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 5px;
+  display: inline-flex;
+  width: 77%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+.Disable-content{
+  display: none;
+}
+.TodoItem-value{
+  font-size: 20px;
+  font-weight: 900;
+  color: #72B6FF;
+  max-width: 25%;
+  min-width: 25%;
+  text-align: center;
+  display: inline-table;
+  z-index: 100;
+}
+
+.Icon {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #CCC;
+}
+
+.Icon-check {
+  background: none;
+  text-align: center;
+}
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete {
+  background: none;
+  display: inline-flex;
+  width: 5%;
+}
+.Icon-delete:hover {
+  color: red;
+}
+.Icon-disable{
+  display: none;
+}
+.loadProgres_todo{
+  margin: 10px 10px;
+  top: 5px;
+  display: inline-grid;
+  width: 65%;
+}
+.loadProgres{
+  background: none;
+  border: 4px solid black;
+  height: 10px;
+  position: relative;
+  top: -15px;
+}
+.loadProgres--marc{
+  height: 14px;
+  border: none;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  background: red;
+
+}
+.TodoDate{
+  border: 4px solid black;
+  background: white;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  width: 98%;
+}
+@media (min-width: 427px){
+
+  .TodoItem{
+    margin-top: 15px;
+  }
+  .TodoItem-p{
+    width: 35%;
+    font-size: 25px;
+  }
+  .Icon{
+    width: 10%;
+  }
+  .Icon-delete{
+    width: 10%;
+  }
+  .loadProgres_todo{
+    max-width: 23%;
+  }
+  .TodoItem-value{
+    min-width: 10%;
+  }
+  #deleteBtnMob{
+    display: none;
+  }
+  #deleteBtnDesk{
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 900px){
+  .loadProgres_todo{
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1200px){
+  .loadProgres_todo{
+    max-width: 32%;
+  }
+}

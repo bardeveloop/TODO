@@ -1,0 +1,14 @@
+.TodoList {
+	margin: 0 0px;
+}
+@media (min-width: 280px){
+	.TodoList{
+	  margin:0 0px;
+	}
+  }
+
+@media (min-width: 900px){
+	.TodoList{
+	  margin:0 20px;
+	}
+  }
