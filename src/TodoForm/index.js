@@ -5,6 +5,7 @@ import './TodoForm.css';
 
 function TodoForm(){
     const [newTodoValue, setNewTodoValue] = React.useState('');
+    const {setSearchValue, searchValue} = React.useContext(TodoContext);
 
     const {
         addTodo,
@@ -26,12 +27,13 @@ function TodoForm(){
         addTodo(newTodoValue);
         setOpenModal(false);
         setNewTodoValue('');
+        setSearchValue('');
     };
     return(
         <form onSubmit={onSubmit}>
             <label>Escribe tu nuevo TODO</label>
             <textarea
-            value={newTodoValue}
+            defaultValue={searchValue}
             onChange={onChange}
             placeholder="Cortar cebolla para el almuerzo"
             />
